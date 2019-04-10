@@ -72,8 +72,8 @@
                                 {$highestPrice=$blockPrice.price}
                             {/if}
                         {/foreach}
-                        <meta itemprop="lowPrice" content="{$lowestPrice}"/>
-                        <meta itemprop="highPrice" content="{$highestPrice}"/>
+                        <meta itemprop="lowPrice" content="{$lowestPrice|number_format:2}"/>
+                        <meta itemprop="highPrice" content="{$highestPrice|number_format:2}"/>
                         <meta itemprop="offerCount" content="{$sArticle.sBlockPrices|count}"/>
                     {/if}
 
